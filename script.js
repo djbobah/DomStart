@@ -35,6 +35,14 @@ for (let i = 0; i < 100; i++) {
 
 //task2
 
+function componentToHex(c) {
+  var hex = c.toString(16);
+  return hex.length == 1 ? "0" + hex : hex;
+}
+function rgbToHex(r, g, b) {
+  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
 const task2 = document.querySelector(".task2");
 
 task2.style.display = "flex";
@@ -57,6 +65,6 @@ temp2.style.display = "flex";
 temp2.style.justifyContent = "center";
 temp2.style.alignItems = "center";
 temp2.innerHTML += `Формат цвета RGB: ${rgb}`;
-temp2.innerHTML += `<br>Формат цвета HEX: ${rgb}`;
-temp2.innerHTML += `<br>Формат цвета RGB: ${rgb}`;
+temp2.innerHTML += `<br>Формат цвета HEX: ${rgbToHex(r, g, b)}`;
+temp2.innerHTML += `<br>Формат цвета текстовый: ${rgb}`;
 task2.appendChild(temp2);
