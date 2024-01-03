@@ -4,6 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM основы</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        /* background-color: lightgray; */
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        /* justify-content: space-between; */
+        /* gap: 2px; */
+      }
+      .task1 {
+        border: 2px solid darkgray;
+        background-color: lightgray;
+        border-radius: 10px;
+        /* height: 100%; */
+        width: 100vh;
+        margin: 5px;
+        padding: 5px;
+        /* justify-content: center; */
+      }
+      .task2 {
+        border: 2px solid darkgrey;
+        background-color: lightgray;
+        border-radius: 10px;
+        /* height: 100%; */
+        /* width: auto; */
+        margin: 5px;
+        padding: 5px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="task1"></div>
+      <div class="task2"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
